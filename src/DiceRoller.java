@@ -8,14 +8,13 @@ public class DiceRoller {
 		Scanner input = new Scanner(System.in);
 		String continueYN;
 		System.out.println("Welcome to the Dice Roller.");
+		System.out.println("Please enter a number of sides.");
+
+			int diceSides = input.nextInt();
+		
 
 		//do statment which holds the code to run the program and will restart when prompted
 		do {
-
-			System.out.println("Please enter a number of sides.");
-
-			int diceSides = input.nextInt();
-
 			System.out.println("Roll:");
 			
 			//calling the getRandom method to get random numbers based on the user input
